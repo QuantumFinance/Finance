@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href ="css/main.css"></link>
+</head>
+<body class="mycolor2">
+    <nav>
+        <div class="nav-wrapper mycolor1">
+            <a href="#!/home" class="brand-logo">Computational Finance</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#!/binomial">Binomial</a> &emsp; &emsp;</li>
+                <li><a href="#!/finiteDifference">Finite Difference</a> &emsp; &emsp;</li>
+                <li><a href="#!/leastSquares">Least Squares</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="rcorners1 container">
+        <div ng-view></div>    
+    </div>
+    <script src="js/main.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,29 @@
+<div class="row z-depth-3 rcorners1">
+    <div class="mycolor5 lime-text text-lighten-2" ng-controller="binomialCtrl">
+        <h4 class="z-depth-4 rcorners-h4">Binomial Option Price</h4>
+        Stock Price:
+        <br>
+        <input type="number" ng-model="buser.stock">
+        <br> Strike Price:
+        <br>
+        <input type="number" ng-model="buser.strike">
+        <br> Depth:
+        <br>
+        <input type="number" ng-model="buser.depth">
+        <br> Rate:
+        <br>
+        <input type="number" ng-model="buser.rate">
+        <br> U:
+        <br>
+        <input type="number" ng-model="buser.u">
+        <br> D:
+        <br>
+        <input type="number" ng-model="buser.d">
+        <button class="waves-effect waves-yellow btn btn1 mycolor1 lime-text text-accent-3" ng-click="resetb()">RESET</button>
+        <button class="waves-effect waves-yellow btn btn1 mycolor1 lime-text text-accent-3" ng-click="submitBinomial()">Submit
+            <span ng-show="myValuesb == ''"><i class="fa fa-refresh fa-spin" style="font-size:24px"></i></span>
+        </button>
+        <h6 class="card-label indigo-text">Result: {{myValuesb}}</h6>
+        <!--<p class="card-label">form = {{buser}}</p>-->
+    </div>
+</div>

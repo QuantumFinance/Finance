@@ -1,0 +1,36 @@
+<div class="row z-depth-3 rcorners1">
+    <div class="mycolor5 lime-text text-lighten-2" ng-controller="finiteDifferenceCtrl">
+        <h4 class="z-depth-4 rcorners-h4">American Option Pricing Using Finite Difference</h4>
+        Stock Price:
+        <br>
+        <input type="number" ng-model="fuser.stock">
+        Strike Price:
+        <br>
+        <input type="number" ng-model="fuser.strike">
+        Rate:
+        <br>
+        <input type="number" ng-model="fuser.rate">
+        Volatility:
+        <br>
+        <input type="number" ng-model="fuser.volatility">
+        M:
+        <br>
+        <input type="number" ng-model="fuser.M">
+        N:
+        <br>
+        <input type="number" ng-model="fuser.N">
+        Time(Years):
+        <br>
+        <input type="number" ng-model="fuser.time">
+        Delta S:
+        <br>
+        <input type="number" ng-model="fuser.delS">
+        <button class="waves-effect waves-yellow btn btn1 mycolor1 lime-text text-accent-3" ng-click="resetf()">RESET</button>
+        <button class="waves-effect waves-yellow btn btn1 mycolor1 lime-text text-accent-3" ng-click="submitFiniteDifference()">Submit
+            <span ng-show="myValuesf == ''"><i class="fa fa-refresh fa-spin" style="font-size:24px"></i></span>
+            {{buttonText}}
+        </button>
+        <h6 class="card-label indigo-text">Result: {{myValuesf}}</h6>
+        <!--<p class="card-label">form = {{fuser}}</p>-->
+    </div>
+</div>

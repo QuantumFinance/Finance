@@ -1,0 +1,42 @@
+<div class="row z-depth-3 rcorners1">
+    <div class="mycolor5 lime-text text-lighten-2" ng-controller="leastSquareCtrl">
+        <h4 class="z-depth-4 rcorners-h4">Least Square Option Price</h4>
+        <div class="row orange indigo-text rcorners-h4">
+            Method: &emsp;
+            <label class="indigo-text">
+                <input class="with-gap" name="methods" type="radio" checked value="normal" ng-model="luser.method"/>
+                <span>Normal &emsp; &emsp;</span>
+            </label>
+            <label class="indigo-text">
+                <input class="with-gap" name="methods" type="radio" value="neural" ng-model="luser.method"/>
+                <span>Neural</span>
+            </label>
+        </div>
+        No of Paths:
+        <br>
+        <input type="number" ng-model="luser.paths">
+        <br> Path Length:
+        <br>
+        <input type="number" ng-model="luser.length">
+        <br> Stock Price (S0):
+        <br>
+        <input type="number" ng-model="luser.stock">
+        <br> Strike Price:
+        <br>
+        <input type="number" ng-model="luser.strike">
+        <br> Rate:
+        <br>
+        <input type="number" ng-model="luser.rate">
+        <br> Volatility:
+        <br>
+        <input type="number" ng-model="luser.volatility">
+        <br>
+        <button class="waves-effect waves-yellow btn btn1 mycolor1 lime-text text-accent-3" ng-click="resetl()">RESET</button>
+        <button class="waves-effect waves-yellow btn btn1 mycolor1 lime-text text-accent-3" ng-click="submitLeastSquare()">Submit
+            <span ng-show="myValuesl == ''"><i class="fa fa-refresh fa-spin" style="font-size:24px"></i></span>
+        </button>
+        <!--</form>-->
+        <h6 class="card-label indigo-text">Result: {{myValuesl}}</h6>
+        <!--<p class="card-label flow-text">form = {{luser}}</p>-->
+    </div>
+</div>

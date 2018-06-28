@@ -1,0 +1,51 @@
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.rcorners1 {
+    /*border-radius: 15px 50px 30px 5px;
+    /*-webkit-border-top-right-radius: 50px 30px; 
+    -webkit-border-bottom-right-radius: 50px 30px;*/
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px; /* future proofing */
+    -khtml-border-radius: 10px; /* for old Konqueror browsers */
+}
+
+.rcorners-h4 {
+    /*border-radius: 15px 50px 30px 5px;
+    /*-webkit-border-top-right-radius: 50px 30px; 
+    -webkit-border-bottom-right-radius: 50px 30px;*/
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px; /* future proofing */
+    -khtml-border-radius: 10px; /* for old Konqueror browsers */
+    padding: 10px;
+}
+
+.mycolor1 {
+    background: #e27d60;
+}
+.mycolor2 {
+    background: #85dcb0
+}
+.mycolor3 {
+    background: #e8a87c
+}
+.mycolor4 {
+    background: #c38d9e
+}
+.mycolor5 {
+    background: #41b3a3
+}
+.btn1:hover{
+    background: #e8a87c
+}
+.container{
+    font-size: 18px
+}
